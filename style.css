@@ -1,0 +1,51 @@
+:root{--p:#1b5e20;--t:#1f2937;--g:#6b7280;--b:#e5e7eb}
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{font-family:system-ui;color:var(--t)}
+
+nav{display:flex;justify-content:space-between;padding:1rem}
+nav ul{display:flex;gap:1.5rem;list-style:none}
+nav a{text-decoration:none;color:var(--t)}
+
+section{padding:3rem}
+
+h1,h2,h3{color:var(--p)}
+p{color:var(--g)}
+
+button{padding:.6rem 1.2rem;border:0;border-radius:6px;cursor:pointer}
+.btn-primary{background:var(--p);color:#fff}
+.btn-secondary{background:none;border:1px solid var(--b)}
+
+.hero,.cards,.pricing{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:1.5rem
+}
+
+.hero img{width:100%;border-radius:12px}
+
+.card,.plan,form{
+border:1px solid var(--b);
+border-radius:10px;
+padding:1.5rem;
+text-align:center
+}
+
+input,textarea{
+width:100%;
+padding:.6rem;
+margin:.5rem 0;
+border:1px solid var(--b);
+border-radius:6px
+}
+
+footer{
+background:var(--t);
+color:#fff;
+text-align:center;
+padding:1rem
+}
+
+@media(max-width:600px){
+nav{flex-direction:column}
+}
